@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iPhone UI Clone</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#000, #333);
+}
+
+.screen {
+  padding: 20px;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.app {
+  text-align: center;
+  color: white;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.3);
+}
+
+.app p {
+  font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="screen">
+  <div class="app-grid">
+
+    <div class="app" onclick="openApp('Safari')">
+      <div class="icon"></div>
+      <p>Safari</p>
+    </div>
+
+    <div class="app" onclick="openApp('Mail')">
+      <div class="icon"></div>
+      <p>Mail</p>
+    </div>
+
+    <div class="app" onclick="openApp('Kamera')">
+      <div class="icon"></div>
+      <p>Kamera</p>
+    </div>
+
+    <div class="app" onclick="openApp('Musik')">
+      <div class="icon"></div>
+      <p>Musik</p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function openApp(name) {
+  alert(name + " geöffnet!");
+}
+</script>
+
+</body>
+</html>
